@@ -1,0 +1,9 @@
+<h1>Crie uma conta</h1>
+
+<form method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Registrar-se">
+</form>
+
+<p>Já possui uma conta? <a href="{% url 'login' %}">Login</a></p>
